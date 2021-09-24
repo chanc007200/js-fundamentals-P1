@@ -15,27 +15,24 @@ function exercise12() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
-  let primeNumArray = [2];//Please let me start at 2
+
+  let primeNumArray =[];//Please let me start at 2.
   for(let i=2;i<=200;i++){
-    for(let j=0;j<=primeNumArray.length;j++){
-      
+  let primeDetected = true;
+    for(let j=2;j<=i/2;j++){
+      if(i%j===0){
+        primeDetected = false;
+        break;
+      }
+    }
+    if(primeDetected){
+    primeNumArray.push(i);
     }
   }
-
-  for(let i=0;i<primeNumArray.length;i++){
-    console.log(primeNumArray[i]);
-  }
-  // -----------------------------------------------------------------
-  // Write code between the lines (above)
-  //
-  //
-  //
-  //
-  //
-  //
+  console.log(primeNumArray);
 }
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-12
-exercise12();
+//exercise12();
 module.exports = exercise12;
