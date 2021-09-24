@@ -1,3 +1,5 @@
+const exercise6_5 = require("./exercise-6.5");
+
 function exercise7() {
   // Exercise 7
   //
@@ -23,6 +25,18 @@ function exercise7() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  for(let i=0;i<=23;i++){
+    if(i===6||i===12||i===18){
+      console.log("It's " + i +"h. Time to eat!");
+    }
+    else if(i===22||i===23||i===0||i===1||i===2||i===3||i===4||i===5){
+      console.log("It's "+ i + "h. Time to sleep!");
+    }
+    else {
+      console.log("It's " + i + "h. Time to train!");
+    }
+
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
@@ -35,5 +49,5 @@ function exercise7() {
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-7
-
+//exercise7();
 module.exports = exercise7;

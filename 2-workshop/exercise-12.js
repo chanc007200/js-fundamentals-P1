@@ -15,6 +15,16 @@ function exercise12() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  let primeNumArray = [2];//Please let me start at 2
+  for(let i=2;i<=200;i++){
+    for(let j=0;j<=primeNumArray.length;j++){
+      
+    }
+  }
+
+  for(let i=0;i<primeNumArray.length;i++){
+    console.log(primeNumArray[i]);
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
@@ -27,5 +37,5 @@ function exercise12() {
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-12
-
+exercise12();
 module.exports = exercise12;

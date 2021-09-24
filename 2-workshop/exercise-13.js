@@ -20,6 +20,21 @@ function exercise13() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  let firstNum = 0;
+  let secondNum = 1;
+  let sum = 0;
+  let count = 48; // Because 0 and 1 are the first 2 numbers
+
+      while(count!==0){
+        
+        sum = firstNum + secondNum;
+        firstNum = secondNum;
+        secondNum = sum;
+        count--;
+        
+      }
+      console.log(sum);
+  
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
@@ -32,5 +47,5 @@ function exercise13() {
 
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-13
-
+//exercise13();
 module.exports = exercise13;
